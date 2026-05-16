@@ -22,7 +22,7 @@ main.tex (your resume)
     └── syncs section reviewers to agents/
 ```
 
-Every review is a **multi-perspective analysis**: the same resume gets evaluated through 6 distinct career lenses simultaneously, producing a weighted score, critical issues, suggested rewrites, and interview questions.
+Every review is a **multi-perspective analysis**: the same resume gets evaluated through 6+ role-based career lenses plus section-specific reviewers simultaneously, producing a weighted score, critical issues, suggested rewrites, and interview questions.
 
 ---
 
@@ -60,13 +60,36 @@ resume-review-agent/
 
 ## Quick Start
 
+### 0. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/resume-review-agent.git
+cd resume-review-agent
+```
+
+Or simply download the ZIP and unzip it.
+
 ### 1. Add Your Resume
 
 Replace `main.tex` with your own LaTeX resume. The file uses `\section{}` headings — these drive auto-generation of question files and section reviewers.
 
-### 2. Run a Review
+### 2. Open in Any AI Agent
 
-Open the repo in any AI coding agent and say:
+Open the repo folder in your preferred AI coding tool:
+
+**opencode / Cursor / Windsurf / Claude Code:**
+```bash
+cd resume-review-agent
+opencode
+# then say: "Review this resume"
+```
+
+**GitHub Copilot / ChatGPT / other assistants:**
+Open the folder in your editor and use the chat interface.
+
+### 3. Run Commands
+
+Once the repo is open, just say what you want:
 
 > "Review this resume"
 
@@ -75,8 +98,12 @@ The agent will automatically:
 2. Load all reviewer lenses from `agents/`
 3. Generate a weighted scorecard
 4. Write the full review to `summary.md`
+5. Generate a **detailed section-by-section analysis** (education, technical skills, experience, summary, each project)
+6. **Sync interview question files** in `questions/` — creates new ones for sections that don't have them, updates existing ones to match resume changes, and removes stale files for deleted sections
 
-### 3. Other Commands
+That's it. No setup, no dependencies, no installs.
+
+### 4. Other Commands
 
 | Say | What Happens |
 |---|---|
