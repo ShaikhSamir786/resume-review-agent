@@ -1,0 +1,175 @@
+\documentclass[10pt]{article}
+
+%-------------------------
+% Page setup
+%-------------------------
+\usepackage[a4paper,top=0.25in,bottom=0.25in,left=0.42in,right=0.42in]{geometry}
+
+%-------------------------
+% Packages
+%-------------------------
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+
+%-------------------------
+% Global formatting
+%-------------------------
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt}
+\pagestyle{empty}
+
+%-------------------------
+% Section formatting
+%-------------------------
+\titleformat{\section}{\bfseries\scshape\large}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+%-------------------------
+% Custom commands
+%-------------------------
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}, leftmargin=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+  \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\resumeProjectHeading}[4]{
+  \item
+  \textbf{\href{#4}{#1}} \hfill #2 \\
+  \textit{#3}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.17in, nosep, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{1pt}}
+
+%-------------------------
+% Document
+%-------------------------
+\begin{document}
+
+%-------------------------
+% Header
+%-------------------------
+\begin{center}
+  {\Huge \scshape Samir Shaikh} \\ \vspace{1pt}
+  Vapi, Gujarat, India \\ \vspace{1pt}
+  \small
+  \href{tel:+918320927182}{+91 8320927182} \quad
+  \href{mailto:22amtics312@gmail.com}{22amtics312@gmail.com} \quad
+  \href{https://linkedin.com/in/samir-shaikh-760b932a8}{linkedin.com/in/samir-shaikh} \quad
+  \href{https://github.com/ShaikhSamir786}{github.com/ShaikhSamir786} \quad
+  \href{https://shaikhsamir786.github.io/portfolio_samir}{Portfolio}
+\end{center}
+
+%-------------------------
+% Summary
+%-------------------------
+\section{Summary}
+B.Tech (IT) student and aspiring Full Stack Developer with hands-on experience in backend development using \textbf{Node.js, Express.js, and both SQL and NoSQL databases}. Skilled in building secure REST APIs, GraphQL APIs, real-time apps, and integrating third-party services. Experienced with message queues, cloud services, and modern DevOps tools. Committed to clean code, systems thinking, and continuous learning.
+
+%-------------------------
+% Experience
+%-------------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Backend Developer Intern}{Sep 2025 -- May 2026}
+{Logicwind}{Surat}
+\resumeItemListStart
+\item Contributed to multiple products across microservices, Firebase-based apps, and scalable backend architectures, gaining exposure to diverse system design patterns.
+\item Developed new features, migrated packages, and improved system performance across existing applications.
+\item Integrated third-party services including Dittofeed, Reoon Email Verifier, and OneSignal to enhance product functionality and user experience.
+\item Strengthened problem-solving and systems thinking skills, learning to approach challenges with an engineering mindset beyond just coding.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------
+% Projects
+%-------------------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+%-------------------------
+% Projects 1
+%-------------------------
+\resumeProjectHeading
+{Sahara Tyre -- WhatsApp Promotional Campaign Platform}{}
+{Node.js, Express, React Native, Expo, TypeScript, Google Sheets API, WhatsApp Web API, GitHub Actions, Render}
+{https://github.com/ShaikhSamir786/ai-ticket-docs}
+\resumeItemListStart
+\item Built a full-stack WhatsApp promotional campaign system with Node.js/Express backend and React Native/Expo mobile app, supporting bulk personalized messaging with template variables and image attachments.
+\item Architected backend with Google Sheets API as primary contact store, concurrent batch processing with rate-limit-safe randomized delays, and WhatsApp Web session persistence for reliable campaign execution.
+\item Developed cross-platform mobile app with tab-based navigation, vehicle category filtering (Truck, Four Wheeler, Two Wheeler, JCB), and QR-code WhatsApp authentication with real-time connection tracking.
+\item Implemented security headers, rate limiting, structured logging, and CI/CD pipeline via GitHub Actions with automated deployment to Render.
+\resumeItemListEnd
+
+
+%-------------------------
+% Projects 2
+%-------------------------
+
+
+\resumeProjectHeading
+{Eventifyy -- Full-Stack Event Management Platform}{}
+{Node.js, Express.js, TypeScript, React, PostgreSQL, GraphQL (Apollo), Sequelize ORM, Tailwind CSS, shadcn/ui, JWT, Nodemailer, Framer Motion}
+{https://github.com/ShaikhSamir786/eventify}
+\resumeItemListStart
+\item Full-stack event management platform with JWT-authenticated registration, SHA-256 OTP email verification, complete event CRUD, and participant invitation system.
+\item Built GraphQL API with Apollo Server 5 on Express 5 using Sequelize ORM and PostgreSQL; React SPA with Vite, Tailwind CSS, shadcn/ui, and Framer Motion animations.
+\item Implemented bcrypt hashing, rate limiting at HTTP and GraphQL layers, CORS security, Winston logging, RBAC, and Zod input validation.
+\resumeItemListEnd
+
+%-------------------------
+% Projects 3
+%-------------------------
+
+
+\resumeProjectHeading
+{AI Customer Ticket Triage -- Microservice-Based Support Automation Platform}{}
+{Node.js, TypeScript, NestJS, Next.js, React.js, GraphQL, PostgreSQL, Sequelize, Redis, BullMQ, Docker, Docker Compose, OpenTelemetry, Prometheus, Grafana}
+{https://github.com/ShaikhSamir786/ai-ticket-docs}
+\resumeItemListStart
+\item Designing a microservice-based platform with 6+ independent services (API gateway, core ticket server, LLM manager, AI processor, scheduler) orchestrated via GraphQL, REST, and async message queues (BullMQ/Kafka).
+\item Architecting multi-agent AI triage using GPT-4 and Claude for ticket classification, priority prediction, smart routing, and reply suggestions with retry logic and dead-letter queue fallback.
+\item Building a dual-frontend architecture: Next.js project homepage and React+GraphQL agent dashboard with real-time WebSocket updates, priority-sorted queues, AI confidence scoring, and SLA tracking.
+\item Deploying a full observability stack (OpenTelemetry, Prometheus, Grafana) with distributed tracing, SLA breach monitoring, domain metrics, and production alerting rules.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------
+% Technical Skills
+%-------------------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, noitemsep]
+\item \textbf{Languages}: JavaScript (ES6+), TypeScript, Java
+\item \textbf{Frontend}: React.js, Next.js, HTML5, CSS3, Tailwind CSS, shadcn/ui, Bootstrap, Framer Motion
+\item \textbf{Backend \& APIs}: Node.js, Express.js, NestJS, GraphQL (Apollo), REST APIs, JWT, bcrypt, Socket.io, Passport.js
+\item \textbf{Databases}: PostgreSQL, MongoDB, Firebase
+\item \textbf{ORMs \& Query}: Sequelize
+\item \textbf{Messaging \& Queues}: BullMQ, Kafka, Message Queues
+\item \textbf{Cloud \& DevOps}: Docker, Docker Compose, Firebase Cloud Functions, Git, GitHub, Postman
+\item \textbf{Monitoring \& Observability}: OpenTelemetry, Prometheus, Grafana
+\item \textbf{Concepts}: MVC, Middleware, API Design, Security Best Practices
+\item \textbf{Soft Skills}: Fast Learner, Adaptable, Collaborative, Problem Solver
+\end{itemize}
+
+%-------------------------
+% Education
+%-------------------------
+\section{Education}
+\textbf{Bachelor of Technology in Information Technology} \hfill 2022 -- 2026 \\
+Uka Tarsadia University \hfill CGPA: 7.99/10 \\
+\\
+\textbf{Schooling} \hfill 2020 -- 2022 \\
+Modern English High School, Vapi \hfill 12th: 55\% \quad 10th: 67\%
+
+\end{document}
