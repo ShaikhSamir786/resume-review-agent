@@ -6,6 +6,17 @@ Built for any AI coding agent — opencode, Cursor, Copilot, Windsurf, Claude Co
 
 ---
 
+## Who Is This For
+
+| Persona | How They Benefit |
+|---|---|
+| **Job Seekers** | Get your resume reviewed from 6+ perspectives before applying. Identify weak spots, missing keywords, and rewrite vague bullets — all before a human recruiter sees it. |
+| **Students / New Grads** | Understand how your projects and education are perceived by Senior Engineers, HR screeners, and Hiring Managers. Know exactly what gaps to fix. |
+| **Career Switchers** | Get a transition-specific lens that evaluates your transferable skills and positions your non-traditional background effectively. |
+| **Recruiters / HR** | Use the system to standardize resume screening across candidates. The ATS-optimization lens catches formatting and keyword issues automatically. |
+
+---
+
 ## How It Works
 
 ```
